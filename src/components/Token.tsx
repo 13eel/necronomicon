@@ -1,6 +1,15 @@
-const Token = () => {
+import Image from "next/image";
+
+interface TokenProps {
+  label: string;
+  iconSrc: string;
+}
+const Token = ({ label, iconSrc }: TokenProps) => {
   return (
-    <div className="h-28 w-28 rounded-full border-4 border-solid border-black bg-token-image bg-token-size bg-center font-token">
+    <div className="relative flex aspect-square w-52 items-center justify-center rounded-full border-[3px] border-solid border-black bg-token-image bg-token-size bg-center font-token">
+      <div className="absolute -mt-2 aspect-square w-11/12">
+        <Image src={iconSrc} alt="Role icon" fill />
+      </div>
       <svg viewBox="0 0 150 150" className="h-full w-full text-xl uppercase">
         <path
           fill="transparent"
@@ -15,7 +24,7 @@ const Token = () => {
           style={{ paintOrder: "stroke" }}
         >
           <textPath xlinkHref="#curve" textAnchor="middle">
-            Cuoco
+            {label}
           </textPath>
         </text>
       </svg>
