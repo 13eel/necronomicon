@@ -3,12 +3,14 @@ import Image from "next/image";
 interface TokenProps {
   label: string;
   iconSrc: string;
+  size?: number;
 }
-const Token = ({ label, iconSrc }: TokenProps) => {
+
+const Token = ({ label, iconSrc, size = 110 }: TokenProps) => {
   return (
-    <div className="relative flex aspect-square w-52 items-center justify-center rounded-full border-[3px] border-solid border-black bg-token-image bg-token-size bg-center font-token">
+    <div className="relative flex aspect-square w-[10.5rem] items-center justify-center rounded-full border-[6px] border-solid border-stone-800 bg-token-image bg-token-size bg-center font-token">
       <div className="absolute -mt-2 aspect-square w-11/12">
-        <Image src={iconSrc} alt="Role icon" fill />
+        <Image src={`/images/${iconSrc}.webp`} alt="Role icon" fill />
       </div>
       <svg viewBox="0 0 150 150" className="h-full w-full text-xl uppercase">
         <path
@@ -19,7 +21,7 @@ const Token = ({ label, iconSrc }: TokenProps) => {
         <text
           x="66.6%"
           textAnchor="middle"
-          fontSize="110%"
+          fontSize={`${size}%`}
           className="fill-black stroke-white stroke-2 font-token tracking-widest"
           style={{ paintOrder: "stroke" }}
         >
