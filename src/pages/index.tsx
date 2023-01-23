@@ -3,107 +3,138 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Page from "../components/Page";
+import Role from "../components/Role";
 import Token from "../components/Token";
 
 type Role = {
   label: string;
   iconSrc: string;
+  size?: number;
+  evil?: boolean;
+  desc: string;
 };
 
 const roles = {
   chef: {
     label: "cuoco",
     iconSrc: "tb/chef",
+    desc: "Cominci sapendo quante coppie di giocatori malvagi siedono vicini",
   },
   empath: {
     label: "empatica",
     iconSrc: "tb/empath",
+    desc: "Ogni notte, sai quanti dei tuoi 2 vicini vivi sono malvagi",
   },
   fortune_teller: {
     label: "chiromante",
     iconSrc: "tb/fortuneteller",
+    desc: "Ogni notte, scegli 2 giocatori: scopri se uno di loro è il Demone. C'è un giocatore buono che ti risulterà come il Demone",
   },
   investigator: {
     label: "investigatore",
     iconSrc: "tb/investigator",
+    desc: "Cominci sapendo che 1 di 2 giocatori indicati è un preciso servitore",
   },
   librarian: {
     label: "bibliotecario",
     iconSrc: "tb/librarian",
     size: 100,
+    desc: "Cominci sapendo che 1 di 2 giocatori indicati è un preciso estraneo (o che non c'è ne sono in gioco)",
   },
   monk: {
     label: "monaco",
     iconSrc: "tb/monk",
+    desc: "Ogni notte*, scegli un giocatore (non voi stessi): sono protetti dal Demone stanotte",
   },
   mayor: {
     label: "sindaco",
     iconSrc: "tb/mayor",
+    desc: "Se non ci sono esecuzioni con 3 giocatori in vita, la tua squadra vince. Un giocatore potrebbe morire al tuo posto di notte",
   },
   raven_keeper: {
     label: "custode dei corvi",
     iconSrc: "tb/ravenkeeper",
     size: 95,
+    desc: "Se muori di notte, scegli un giocatore: scopri il suo ruolo",
   },
   slayer: {
     label: "witcher",
     iconSrc: "tb/slayer",
+    desc: "Una volta per gioco, di giorno, scegli pubblicamente un giocatore: se è un Demone muore",
   },
   soldier: {
     label: "soldato",
     iconSrc: "tb/soldier",
+    desc: "Siete al sicuro dal Demone",
   },
   undertaker: {
     label: "becchino",
     iconSrc: "tb/undertaker",
+    desc: "Ogni notte*, scopri il ruolo di chi è stato giustiziato oggi",
   },
   virgin: {
     label: "vergine",
     iconSrc: "tb/virgin",
+    desc: "La 1° volta che vieni nominata, se chi ti ha nominato è un cittadino, verrà giustiziata",
   },
   washerwoman: {
     label: "lavandaia",
     iconSrc: "tb/washerwoman",
+    desc: "Cominci sapendo che 1 di 2 giocatori è un preciso cittadino",
   },
 
   butler: {
     label: "maggiordomo",
     iconSrc: "tb/butler",
+    desc: "Ogni notte, scegli un giocatore (non voi stessi): domani potrai votare solo se egli voterà",
   },
   drunk: {
     label: "l'ubriaco",
     iconSrc: "tb/drunk",
+    desc: "Non sai di essere l'ubriaco. Pensi di essere un cittadino ma la tua abilità malfunziona",
   },
   recluse: {
     label: "recluso",
     iconSrc: "tb/recluse",
+    desc: "Potresti risultare come malvagio e come Demone o seguace, anche se morto",
   },
   saint: {
     label: "santo",
     iconSrc: "tb/saint",
+    desc: "Se vieni giustiziato, la tua squadra perde",
   },
 
   baron: {
     label: "barone",
     iconSrc: "tb/baron",
+    desc: "Ci sono 2 estranei extra in gioco [+2 Estranei]",
+    evil: true,
   },
   poisoner: {
     label: "avvelenatore",
     iconSrc: "tb/poisoner",
+    desc: "Ogni notte, scegli un giocatore: sono avvelinati stanotte e domani giorno",
+    evil: true,
   },
   scarlet_woman: {
     label: "donna scarlatta",
     iconSrc: "tb/scarletwoman",
     size: 95,
+    desc: "Se ci sono almeno 5 giocatori vivi e il Demone muore, diventi il Demone",
+    evil: true,
   },
   spy: {
     label: "spia",
     iconSrc: "tb/spy",
+    desc: "Ogni notte, vedi il grimorio. Potresti risultare come buono e paesano o estraneo, anche se morto",
+    evil: true,
   },
 
   imp: {
     label: "diavoletto",
     iconSrc: "tb/imp",
+    desc: "Ogni notte*, segli un giocatore: muore. Se uccidi te stesso, un seguace diventerà il Diavoletto",
+    evil: true,
   },
 } as const;
 
@@ -157,17 +188,70 @@ const Home: NextPage = () => {
             <Token label="imbranato" iconSrc="snv/klutz" />
           </div>
         </Page> */}
-        <Page className="relative">
+        <Page>
           <div
             style={{ backgroundImage: "url('/images/tb/sheet.webp')" }}
-            className="h-full w-full"
+            className="script h-full w-full"
           >
             <Image
               src="/images/tb/logo.webp"
               width={1000}
               height={50}
+              className="logo"
               alt="logo"
             />
+            <div className="town-side side flex items-center justify-center uppercase text-white">
+              cittadini
+            </div>
+            <div className="town mr-4 columns-2">
+              <Role {...roles.chef} />
+              <Role {...roles.empath} />
+              <Role {...roles.fortune_teller} />
+              <Role {...roles.investigator} />
+              <Role {...roles.librarian} />
+              <Role {...roles.mayor} />
+              <Role {...roles.monk} />
+              <Role {...roles.raven_keeper} />
+              <Role {...roles.slayer} />
+              <Role {...roles.soldier} />
+              <Role {...roles.virgin} />
+              <Role {...roles.washerwoman} />
+            </div>
+            <div className="out-side side flex items-center justify-center uppercase text-white">
+              estranei
+            </div>
+            <div className="out mr-4 columns-2">
+              <Role {...roles.butler} />
+              <Role {...roles.drunk} />
+              <Role {...roles.recluse} />
+              <Role {...roles.saint} />
+            </div>
+            <div className="minions-side side flex items-center justify-center uppercase text-white">
+              seguaci
+            </div>
+            <div className="minions mr-4 columns-2">
+              <Role {...roles.baron} />
+              <Role {...roles.poisoner} />
+              <Role {...roles.scarlet_woman} />
+              <Role {...roles.spy} />
+            </div>
+            <div className="demons-side side flex items-center justify-center uppercase text-white">
+              demoni
+            </div>
+            <div className="demons mr-4 columns-2">
+              <Role {...roles.imp} />
+            </div>
+            <div
+              className="bottom relative flex items-end"
+              style={{ gridArea: "bottom" }}
+            >
+              <Image
+                src="/images/tb/sheet-bottom.webp"
+                width={900}
+                height={50}
+                alt="bottom"
+              />
+            </div>
           </div>
         </Page>
       </main>
