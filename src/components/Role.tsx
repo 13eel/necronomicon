@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 interface RoleProps {
   label: string;
   desc: string;
@@ -9,22 +8,16 @@ interface RoleProps {
 const Role = ({ label, desc, iconSrc, evil = false }: RoleProps) => {
   return (
     <div className="flex">
-      <Image
-        src={`/images/${iconSrc}.webp`}
-        width={90}
-        height={50}
-        alt=""
-        className="-mt-3"
-      />
-      <p className="text-sm leading-none">
+      <img src={`/images/${iconSrc}.webp`} className="-my-3 w-[80px]" alt="" />
+      <p className="font-sans text-sm leading-none">
         <h4
-          className={`mb-1 text-base font-bold capitalize ${
+          className={`pt-2 font-serif font-bold capitalize ${
             evil ? "text-red-600" : "text-sky-600"
           }`}
         >
           {label}
         </h4>
-        {desc}
+        <span dangerouslySetInnerHTML={{ __html: desc }}></span>
       </p>
     </div>
   );

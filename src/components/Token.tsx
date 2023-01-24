@@ -8,7 +8,7 @@ interface TokenProps {
 
 const Token = ({ label, iconSrc, size = 110 }: TokenProps) => {
   return (
-    <div className="relative flex aspect-square w-[10.5rem] items-center justify-center rounded-full border-[6px] border-solid border-stone-800 bg-token-image bg-token-size bg-center font-token">
+    <div className="relative flex aspect-square w-[10.5rem] items-center justify-center rounded-full border-[5px] border-solid border-stone-800 bg-token-image bg-token-size bg-center font-token">
       <div className="absolute -mt-2 aspect-square w-11/12">
         <Image src={`/images/${iconSrc}.webp`} alt="Role icon" fill />
       </div>
