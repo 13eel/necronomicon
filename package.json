@@ -21,6 +21,7 @@
     "@trpc/react-query": "^10.8.1",
     "@trpc/server": "^10.8.1",
     "class-variance-authority": "^0.4.0",
+    "daisyui": "^2.51.3",
     "next": "13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -88,7 +88,7 @@ const DropArea = ({ children, id }: DropAreaProps) => {
       id={id?.toString()}
       ref={setNodeRef}
       style={{ color: isOver ? "green" : "" }}
-      className="h-20 w-1/4 border border-slate-400"
+      className="h-80 w-1/4 border border-slate-400"
     >
       {children}
     </div>
