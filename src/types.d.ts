@@ -1,4 +1,6 @@
-interface Role {
+import { type CSSProperties } from "react";
+
+export interface Role {
   label: string;
   iconSrc: string;
   desc: string;
@@ -6,4 +8,9 @@ interface Role {
   evil?: boolean;
 }
 
-type Roles = Readonly<Record<string, Role>>;
+export type Roles = Readonly<Record<string, Role>>;
+
+export interface UIComponent {
+  className?: string;
+  style?: CSSProperties;
+}
