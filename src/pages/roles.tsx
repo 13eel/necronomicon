@@ -1,12 +1,9 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { type NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Page from "../components/Page";
-import Role from "../components/Role";
-import Token from "../components/Token";
+import Page from "~/components/Page";
+import Token from "~/components/Token";
 
-import roles from "../data/roles/tb";
+import roles from "~/data/roles/tb";
 
 const Home: NextPage = () => {
   return (

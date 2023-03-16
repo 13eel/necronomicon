@@ -2,7 +2,7 @@ export interface PlayerCount {
   townsfolk: number;
   outsider: number;
   minion: number;
-  demon: 1;
+  demon: number;
 }
 
 const player_counts: Map<number, PlayerCount> = new Map([

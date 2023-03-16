@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -6,7 +5,7 @@ import Page from "../components/Page";
 import Role from "../components/Role";
 import Token from "../components/Token";
 
-import roles from "../data/roles/tb";
+import roles from "~/data/roles/tb";
 
 const Home: NextPage = () => {
   return (
@@ -71,7 +70,7 @@ const Home: NextPage = () => {
               className="logo"
               alt="logo"
             />
-            <div className="town-side side flex items-center justify-center font-script-title uppercase text-amber-200">
+            <div className="town-side side font-script-title flex items-center justify-center uppercase text-amber-200">
               cittadini
             </div>
             <div className="town columns-2 pr-8 pt-3">
@@ -90,7 +89,7 @@ const Home: NextPage = () => {
               <Role {...roles.slayer} />
             </div>
             <div className="town -ml-10 w-80 border-b-2 border-black/50"></div>
-            <div className="out-side side flex items-center justify-center font-script-title uppercase text-amber-200">
+            <div className="out-side side font-script-title flex items-center justify-center uppercase text-amber-200">
               emarginati
             </div>
             <div className="out columns-2 pr-8 pt-6">
@@ -100,7 +99,7 @@ const Home: NextPage = () => {
               <Role {...roles.drunk} />
             </div>
             <div className="out -ml-10 w-80 border-b-2 border-black/50"></div>
-            <div className="minions-side side flex items-center justify-center font-script-title uppercase text-amber-200">
+            <div className="minions-side side font-script-title flex items-center justify-center uppercase text-amber-200">
               seguaci
             </div>
             <div className="minions columns-2 pr-8 pt-6">
@@ -110,7 +109,7 @@ const Home: NextPage = () => {
               <Role {...roles.spy} />
             </div>
             <div className="minions -ml-10 w-80 border-b-2 border-black/50"></div>
-            <div className="demons-side side mt-4 flex items-center justify-end font-script-title uppercase text-amber-200">
+            <div className="demons-side side font-script-title mt-4 flex items-center justify-end uppercase text-amber-200">
               demoni
             </div>
             <div className="demons relative  columns-2 pt-6">

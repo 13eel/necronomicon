@@ -5,13 +5,9 @@ import Range from "../components/ui/Range";
 
 const BagPage: NextPage = () => {
   const [players, setPlayers] = useState(8);
-  const foo = player_counts.has(5) ? player_counts.get(5) : player_counts.;
-  // const aa = player_counts[10]
-  // const fob = player_counts[5]
-  // const foo = player_counts[5] ? player_counts[5] : 6;
-  // const { townsfolk, outsider, minion, demon } = player_counts[players]
-  //   ? player_counts[players]
-  //   : player_counts[5];
+  const { townsfolk, outsider, minion, demon } = player_counts.has(players)
+    ? player_counts.get(players)!
+    : player_counts.get(5)!;
 
   return (
     <>
