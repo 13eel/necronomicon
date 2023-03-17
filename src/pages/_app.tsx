@@ -1,12 +1,11 @@
 import { type AppType } from "next/app";
 
-import { api } from "../utils/api";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import {
   Uncial_Antiqua,
   Libre_Baskerville,
   Source_Sans_Pro,
-} from "@next/font/google";
+} from "next/font/google";
 
 import "../styles/globals.css";
 
@@ -40,4 +39,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   );
 };
 
-export default api.withTRPC(MyApp);
+export default MyApp;

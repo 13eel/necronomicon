@@ -8,7 +8,7 @@ interface PageProps {
 const Page = ({ children, className = "" }: PageProps) => {
   return (
     <div
-      className={`${className} h-[29.7cm] w-[21cm] overflow-hidden bg-white `}
+      className={`${className} h-[29.7cm] w-[21cm] break-after-page overflow-hidden bg-white `}
     >
       {children}
     </div>
