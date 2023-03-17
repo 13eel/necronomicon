@@ -31,7 +31,7 @@ const dragData: DragItem[] = [
   },
 ];
 
-const BookPage: NextPage = () => {
+const DragPage: NextPage = () => {
   const [items, setItems] = useState(dragData);
   // const containers = ["A", "B", "C"];
   // const [parent, setParent] = useState<UniqueIdentifier>();
@@ -128,4 +128,4 @@ const Draggable = ({ id, className, style, children }: DraggableProps) => {
   );
 };
 
-export default BookPage;
+export default DragPage;
