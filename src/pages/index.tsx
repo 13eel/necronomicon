@@ -3,6 +3,7 @@ import { useState } from "react";
 import player_counts from "~/data/player_counts";
 import Range from "../components/ui/Range";
 import Tab from "~/components/ui/Tab";
+import Tabs from "~/components/ui/Tabs";
 
 const BagPage: NextPage = () => {
   const [players, setPlayers] = useState(8);
@@ -30,35 +31,8 @@ const BagPage: NextPage = () => {
           <span>{demon}</span>
         </div>
 
-        <div className="tabs justify-between">
-          <Tab
-            className="grow"
-            onClick={() => setTab("T")}
-            active={tab === "T"}
-          >
-            T
-          </Tab>
-          <Tab
-            className="grow"
-            onClick={() => setTab("O")}
-            active={tab === "O"}
-          >
-            O
-          </Tab>
-          <Tab
-            className="grow"
-            onClick={() => setTab("M")}
-            active={tab === "M"}
-          >
-            M
-          </Tab>
-          <Tab
-            className="grow"
-            onClick={() => setTab("D")}
-            active={tab === "D"}
-          >
-            D
-          </Tab>
+        <div className="w-full">
+          <Tabs tabs={{ T: "T", O: "O", M: "M", D: "D" }} />
         </div>
       </main>
     </>

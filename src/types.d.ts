@@ -14,3 +14,5 @@ export interface UIComponent {
   className?: string;
   style?: CSSProperties;
 }
+
+export type RoleType = "townsfolk" | "outsider" | "minion" | "demon";
