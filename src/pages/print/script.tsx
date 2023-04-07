@@ -3,9 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Page from "../../components/print/Page";
 import Role from "../../components/print/Role";
-import Token from "../../components/print/Token";
 
-import roles from "~/data/roles/tb";
+import characters from "~/data/characters/trouble_brewing";
 
 const PrintScriptPage: NextPage = () => {
   return (
@@ -17,47 +16,6 @@ const PrintScriptPage: NextPage = () => {
       </Head>
 
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
-        <Page className="hidden py-[0.5cm]">
-          <div className="flex justify-around">
-            <Token {...roles.chef} />
-            <Token {...roles.empath} />
-            <Token {...roles.fortune_teller} />
-            <Token {...roles.investigator} />
-          </div>
-          <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.librarian} />
-            <Token {...roles.monk} />
-            <Token {...roles.mayor} />
-          </div>
-          <div className="-mt-4 flex justify-around">
-            <Token {...roles.raven_keeper} />
-            <Token {...roles.slayer} />
-            <Token {...roles.soldier} />
-            <Token {...roles.undertaker} />
-          </div>
-          <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.virgin} />
-            <Token {...roles.washerwoman} />
-            <Token {...roles.butler} />
-          </div>
-          <div className="-mt-4 flex justify-around">
-            <Token {...roles.drunk} />
-            <Token {...roles.recluse} />
-            <Token {...roles.saint} />
-            <Token {...roles.baron} />
-          </div>
-          <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.poisoner} />
-            <Token {...roles.scarlet_woman} />
-            <Token {...roles.spy} />
-          </div>
-          <div className="-mt-4 flex justify-around">
-            <Token {...roles.imp} />
-            <Token label="orologiaio" iconSrc="snv/clockmaker" />
-            <Token label="artista" iconSrc="snv/artist" />
-            <Token label="imbranato" iconSrc="snv/klutz" />
-          </div>
-        </Page>
         <Page className="overflow-hidden">
           <div
             style={{ backgroundImage: "url('/images/tb/sheet.webp')" }}
@@ -74,46 +32,46 @@ const PrintScriptPage: NextPage = () => {
               cittadini
             </div>
             <div className="town columns-2 pr-8 pt-3">
-              <Role {...roles.librarian} />
-              <Role {...roles.undertaker} />
-              <Role {...roles.chef} />
-              <Role {...roles.raven_keeper} />
-              <Role {...roles.empath} />
-              <Role {...roles.fortune_teller} />
-              <Role {...roles.investigator} />
-              <Role {...roles.washerwoman} />
-              <Role {...roles.monk} />
-              <Role {...roles.mayor} />
-              <Role {...roles.soldier} />
-              <Role {...roles.virgin} />
-              <Role {...roles.slayer} />
+              <Role {...characters.librarian} />
+              <Role {...characters.undertaker} />
+              <Role {...characters.chef} />
+              <Role {...characters.raven_keeper} />
+              <Role {...characters.empath} />
+              <Role {...characters.fortune_teller} />
+              <Role {...characters.investigator} />
+              <Role {...characters.washerwoman} />
+              <Role {...characters.monk} />
+              <Role {...characters.mayor} />
+              <Role {...characters.soldier} />
+              <Role {...characters.virgin} />
+              <Role {...characters.slayer} />
             </div>
             <div className="town -ml-10 w-80 border-b-2 border-black/50"></div>
             <div className="out-side side flex items-center justify-center font-script-title uppercase text-amber-200">
               emarginati
             </div>
             <div className="out columns-2 pr-8 pt-6">
-              <Role {...roles.butler} />
-              <Role {...roles.recluse} />
-              <Role {...roles.saint} />
-              <Role {...roles.drunk} />
+              <Role {...characters.butler} />
+              <Role {...characters.recluse} />
+              <Role {...characters.saint} />
+              <Role {...characters.drunk} />
             </div>
             <div className="out -ml-10 w-80 border-b-2 border-black/50"></div>
             <div className="minions-side side flex items-center justify-center font-script-title uppercase text-amber-200">
               seguaci
             </div>
             <div className="minions columns-2 pr-8 pt-6">
-              <Role {...roles.poisoner} />
-              <Role {...roles.baron} />
-              <Role {...roles.scarlet_woman} />
-              <Role {...roles.spy} />
+              <Role {...characters.poisoner} />
+              <Role {...characters.baron} />
+              <Role {...characters.scarlet_woman} />
+              <Role {...characters.spy} />
             </div>
             <div className="minions -ml-10 w-80 border-b-2 border-black/50"></div>
             <div className="demons-side side mt-4 flex items-center justify-end font-script-title uppercase text-amber-200">
               demoni
             </div>
             <div className="demons relative  columns-2 pt-6">
-              <Role {...roles.imp} />
+              <Role {...characters.imp} />
               <div
                 className="absolute bottom-0 -left-10 flex h-[110px] w-full items-end"
                 style={{ gridArea: "bottom" }}

@@ -3,7 +3,7 @@ import Head from "next/head";
 import Page from "~/components/print/Page";
 import Token from "~/components/print/Token";
 
-import roles from "~/data/roles/tb";
+import characters from "~/data/characters/trouble_brewing";
 
 const PrintTokenPage: NextPage = () => {
   return (
@@ -17,43 +17,43 @@ const PrintTokenPage: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
         <Page className="py-[0.5cm]">
           <div className="flex justify-around">
-            <Token {...roles.chef} />
-            <Token {...roles.empath} />
-            <Token {...roles.fortune_teller} />
-            <Token {...roles.investigator} />
+            <Token {...characters.chef} />
+            <Token {...characters.empath} />
+            <Token {...characters.fortune_teller} />
+            <Token {...characters.investigator} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.librarian} />
-            <Token {...roles.monk} />
-            <Token {...roles.mayor} />
+            <Token {...characters.librarian} />
+            <Token {...characters.monk} />
+            <Token {...characters.mayor} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...roles.raven_keeper} />
-            <Token {...roles.slayer} />
-            <Token {...roles.soldier} />
-            <Token {...roles.undertaker} />
+            <Token {...characters.raven_keeper} />
+            <Token {...characters.slayer} />
+            <Token {...characters.soldier} />
+            <Token {...characters.undertaker} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.virgin} />
-            <Token {...roles.washerwoman} />
-            <Token {...roles.butler} />
+            <Token {...characters.virgin} />
+            <Token {...characters.washerwoman} />
+            <Token {...characters.butler} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...roles.drunk} />
-            <Token {...roles.recluse} />
-            <Token {...roles.saint} />
-            <Token {...roles.baron} />
+            <Token {...characters.drunk} />
+            <Token {...characters.recluse} />
+            <Token {...characters.saint} />
+            <Token {...characters.baron} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...roles.poisoner} />
-            <Token {...roles.scarlet_woman} />
-            <Token {...roles.spy} />
+            <Token {...characters.poisoner} />
+            <Token {...characters.scarlet_woman} />
+            <Token {...characters.spy} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...roles.imp} />
-            <Token label="orologiaio" iconSrc="snv/clockmaker" />
-            <Token label="artista" iconSrc="snv/artist" />
-            <Token label="imbranato" iconSrc="snv/klutz" />
+            <Token {...characters.imp} />
+            <Token label="orologiaio" icon="snv/clockmaker" />
+            <Token label="artista" icon="snv/artist" />
+            <Token label="imbranato" icon="snv/klutz" />
           </div>
         </Page>
       </main>

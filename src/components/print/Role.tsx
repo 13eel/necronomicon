@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 interface RoleProps {
   label: string;
-  desc: string;
+  description: string;
   evil?: boolean;
-  iconSrc: string;
+  icon: string;
 }
-const Role = ({ label, desc, iconSrc, evil = false }: RoleProps) => {
+const Role = ({ label, description, icon, evil = false }: RoleProps) => {
   return (
     <div className="flex">
-      <img src={`/images/${iconSrc}.webp`} className="-my-3 w-[80px]" alt="" />
+      <img src={`/images/${icon}.webp`} className="-my-3 w-[80px]" alt="" />
       <p className="font-sans text-sm leading-none">
         <h4
           className={`pt-2 font-serif font-bold capitalize ${
@@ -17,7 +17,7 @@ const Role = ({ label, desc, iconSrc, evil = false }: RoleProps) => {
         >
           {label}
         </h4>
-        <span dangerouslySetInnerHTML={{ __html: desc }}></span>
+        <span dangerouslySetInnerHTML={{ __html: description }}></span>
       </p>
     </div>
   );
