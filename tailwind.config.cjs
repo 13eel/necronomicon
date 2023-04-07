@@ -14,7 +14,6 @@ const config = {
       },
       fontFamily: {
         token: ["var(--font-token)"],
-
         "script-title": ["var(--font-script-title)"],
         serif: ["var(--font-serif)", ...fontFamily.serif],
         sans: ["var(--font-sans)", ...fontFamily.sans],

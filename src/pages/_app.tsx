@@ -32,7 +32,7 @@ const source_sans_pro = Source_Sans_Pro({
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <main
-      className={`${tokenFont.variable} ${unical_antiqua.variable} ${libre_baskerville.variable} ${source_sans_pro.variable}`}
+      className={`${tokenFont.variable} ${unical_antiqua.variable} ${libre_baskerville.variable} ${source_sans_pro.variable} font-sans`}
     >
       <Component {...pageProps} />
     </main>

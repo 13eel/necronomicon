@@ -14,7 +14,7 @@ const BagPage: NextPage = () => {
 
   return (
     <>
-      <main className="p-2">
+      <main className="container mx-auto p-2">
         <Range
           step={1}
           min={5}
