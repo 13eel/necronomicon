@@ -1,16 +1,24 @@
 # Necronomicon
+
 Un WebApp per essere una versione digitale del "Grimorioro" del gioco Blood on the Clocktower, in italiano, simile a https://www.pocketgrimoire.co.uk.
 
 ### MVP
+
 - [ ] Costruzione della partita
 - [ ] Aggiungere e spostare i giocatori liberamente con Drag 'n' Drop
 - [ ] Assegnare ruoli al giocatori
 - [ ] Assegnare "reminder" token ai giocatori
 - [ ] Tenere traccia dei giocatori morti
 - [ ] Tenere traccia delle nomination e voti del "giorno" attuale
-- [ ] Assistere con la fase notturna 
+- [ ] Assistere con la fase notturna
 
 Creato usando lo stack T3
+
+# Definitions
+
+- Seat (Posto)
+- Player (Giocatore)
+- Character (Personaggio)
 
 # Create T3 App
 
