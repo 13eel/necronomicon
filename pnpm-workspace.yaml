@@ -1,5 +1,6 @@
 packages:
-  - apps/nextjs
+  - apps/narrator
+  - apps/player
   - packages/api
   - packages/auth
   - packages/db
