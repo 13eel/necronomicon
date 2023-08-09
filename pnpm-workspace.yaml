@@ -2,6 +2,7 @@ packages:
   - apps/grimoire
   - apps/narrator
   - apps/player
+  - apps/docs
   - packages/api
   - packages/auth
   - packages/db
