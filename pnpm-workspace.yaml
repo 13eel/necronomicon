@@ -5,6 +5,7 @@ packages:
   - apps/docs
   - packages/api
   - packages/auth
-  - packages/db
+  - packages/characters
   - packages/config/*
+  - packages/db
   - packages/ui
