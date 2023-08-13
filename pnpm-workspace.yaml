@@ -1,0 +1,11 @@
+packages:
+  - apps/grimoire
+  - apps/narrator
+  - apps/player
+  - apps/docs
+  - packages/api
+  - packages/auth
+  - packages/characters
+  - packages/config/*
+  - packages/db
+  - packages/ui
