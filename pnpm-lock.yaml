@@ -426,6 +426,9 @@ importers:
 
   packages/ui:
     dependencies:
+      '@acme/characters':
+        specifier: workspace:*
+        version: link:../characters
       concurrently:
         specifier: ^7.6.0
         version: 7.6.0
