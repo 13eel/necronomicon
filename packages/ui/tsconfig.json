@@ -1,21 +1,5 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "incremental": false,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "lib": ["dom", "ES2015"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "noUncheckedIndexedAccess": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ES6"
-  },
-  "include": ["."],
+  "extends": "@acme/tsconfig/react-library.json",
+  "include": [".", "env.ts"],
   "exclude": ["dist", "build", "node_modules"]
 }
