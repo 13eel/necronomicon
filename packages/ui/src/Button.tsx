@@ -32,7 +32,6 @@ const variants = cva(["rounded select-none"], {
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     Omit<VariantProps<typeof variants>, "disabled"> {}
-
 export const Button = forwardRef(
   (
     {
