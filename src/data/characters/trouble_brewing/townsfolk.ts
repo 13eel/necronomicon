@@ -24,7 +24,7 @@ export const townsfolk = characters({
       label: "investigatrice",
       icon: "tb/investigator",
       description:
-        "Inizi sapendo che 1 di 2 giocatrici indicate è una precisa seguage",
+        "Inizi sapendo che 1 di 2 giocatrici indicate è una precisa seguace",
     },
     librarian: {
       label: "bibliotecario",

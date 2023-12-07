@@ -3,7 +3,7 @@ import Head from "next/head";
 import Page from "~/components/print/Page";
 import Token from "~/components/print/Token";
 
-import characters from "~/data/characters/trouble_brewing";
+import characters from "~/data/characters/bad_moon_rising";
 
 const PrintTokenPage: NextPage = () => {
   return (
@@ -17,43 +17,43 @@ const PrintTokenPage: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center justify-center bg-black">
         <Page className="py-[0.5cm]">
           <div className="flex justify-around">
-            <Token {...characters.chef} />
-            <Token {...characters.empath} />
-            <Token {...characters.fortune_teller} />
-            <Token {...characters.investigator} />
+            <Token {...characters.assassin} />
+            <Token {...characters.chambermaid} />
+            <Token {...characters.courtier} />
+            <Token {...characters.devils_advocate} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...characters.librarian} />
-            <Token {...characters.monk} />
-            <Token {...characters.mayor} />
+            <Token {...characters.exorcist} />
+            <Token {...characters.fool} />
+            <Token {...characters.gambler} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...characters.raven_keeper} />
-            <Token {...characters.slayer} />
-            <Token {...characters.soldier} />
-            <Token {...characters.undertaker} />
+            <Token {...characters.godfather} />
+            <Token {...characters.goon} />
+            <Token {...characters.gossip} />
+            <Token {...characters.grandmother} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...characters.virgin} />
-            <Token {...characters.washerwoman} />
-            <Token {...characters.butler} />
+            <Token {...characters.innkeeper} />
+            <Token {...characters.lunatic} />
+            <Token {...characters.mastermind} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...characters.drunk} />
-            <Token {...characters.recluse} />
-            <Token {...characters.saint} />
-            <Token {...characters.baron} />
+            <Token {...characters.minstrel} />
+            <Token {...characters.moonchild} />
+            <Token {...characters.pacifist} />
+            <Token {...characters.po} />
           </div>
           <div className="-mt-4 flex justify-center gap-6">
-            <Token {...characters.poisoner} />
-            <Token {...characters.scarlet_woman} />
-            <Token {...characters.spy} />
+            <Token {...characters.professor} />
+            <Token {...characters.pukka} />
+            <Token {...characters.sailor} />
           </div>
           <div className="-mt-4 flex justify-around">
-            <Token {...characters.imp} />
-            <Token label="orologiaio" icon="snv/clockmaker" />
-            <Token label="artista" icon="snv/artist" />
-            <Token label="imbranato" icon="snv/klutz" />
+            <Token {...characters.shabaloth} />
+            <Token {...characters.tea_lady} />
+            <Token {...characters.tinker} />
+            <Token {...characters.zombuul} />
           </div>
         </Page>
       </main>

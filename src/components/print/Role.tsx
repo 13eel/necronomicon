@@ -17,7 +17,10 @@ const Role = ({ label, description, icon, evil = false }: RoleProps) => {
         >
           {label}
         </h4>
-        <span dangerouslySetInnerHTML={{ __html: description }}></span>
+        <span
+          dangerouslySetInnerHTML={{ __html: description }}
+          className="text-black"
+        ></span>
       </p>
     </div>
   );

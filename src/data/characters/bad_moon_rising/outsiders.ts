@@ -7,24 +7,25 @@ export const outsiders = characters({
       label: "scagnozzo",
       icon: "bmr/goon",
       description:
-        "Ogni notte, il primo giocatore che ti sceglie con la propria abilità sarà ubriaco fino all'alba. Tu assumerai la loro allineamento",
+        "Ogni notte, la prima persona che ti sceglie con la propria abilità sarà ubriaca fino all'alba e tu assumerai il suo allineamento.",
     },
     lunatic: {
       label: "lunatico",
       icon: "bmr/lunatic",
       description:
-        "Tu pensi di essere un Demone, ma non lo sei. Il Demone sa chi sei e chi scegli di notte",
+        "Tu pensi di essere un Demone, ma non lo sei.  Il Demone sa chi sei e chi scegli di notte.",
     },
     tinker: {
       label: "inventore",
       icon: "bmr/tinker",
-      description: "Potresti morire in qualsiasi momento",
+      description: "Potresti morire in qualsiasi momento.",
     },
     moonchild: {
       label: "figlio della luna",
       icon: "bmr/moonchild",
+      size: 90,
       description:
-        "Quando vieni a sapere che sei morto, scegli publicamante 1 giocatore vivo. Stanotte, se erano un giocatore buono, morira",
+        "Quando vieni a sapere che sei morto, scegli pubblicamente una persona viva. Stanotte, se era buona, morirà.",
     },
   },
 });

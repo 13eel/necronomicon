@@ -7,25 +7,26 @@ export const minions = characters({
       label: "padrino",
       icon: "bmr/godfather",
       description:
-        "Inizi a conoscere quali Emarginati sono in gioco. Se 1 è morto oggi, scegli un giocatore stasera: muoiono. [-1 o +1 Emarginati]",
+        "Inizi sapendo quali Emarginati sono in gioco. Se 1 di loro muore oggi, stanotte, scegli una persona: muore.<br>[-1 o +1 Emarginati]",
     },
     devils_advocate: {
       label: "avvocato del diavolo",
-      icon: "bmr/poisoner",
+      icon: "bmr/devils_advocate",
+      size: 75,
       description:
-        "Ogni notte, scegli un giocatore vivo (diverso dalla scorsa notte): se viene giustiziato domani, non muore",
+        "Ogni notte, scegli una persona viva(diversa dalla  notte precedente): se viene giustiziata domani, non muore.",
     },
     assassin: {
       label: "assassina",
       icon: "bmr/assassin",
       description:
-        "Una volta per gioco, di notte*, scegli un giocatore: Muore, anche se per qualche motivo non potrebbe",
+        "Una volta per gioco, di notte*, scegli una persona: muore, anche se per qualche motivo non potrebbe.",
     },
     mastermind: {
       label: "genio del male",
       icon: "bmr/mastermind",
       description:
-        "Se il Demone muore per esecuzione (terminando il gioco), giocate per 1 in più. Se un giocatore viene giustiziato, la loro squadra perde",
+        "Se il Demone muore per esecuzione (terminando il gioco), giocate per 1 giorno in più. Se una persona viene giustiziata, la sua squadra perde.",
     },
   },
 });
