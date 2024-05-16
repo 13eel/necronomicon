@@ -7,7 +7,7 @@ interface RoleProps {
 }
 const Role = ({ label, description, icon, evil = false }: RoleProps) => {
   return (
-    <div className="flex">
+    <div className="flex items-center">
       <img src={`/images/${icon}.webp`} className="-my-3 w-[80px]" alt="" />
       <p className="font-sans text-sm leading-none">
         <h4
