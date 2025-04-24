@@ -7,21 +7,25 @@ interface RoleProps {
 }
 const Role = ({ label, description, icon, evil = false }: RoleProps) => {
   return (
-    <div className="flex items-center">
-      <img src={`/images/${icon}.webp`} className="-my-3 w-[80px]" alt="" />
-      <p className="font-sans text-sm leading-none">
+    <div className="flex items-start">
+      <img
+        src={`/images/${icon}.webp`}
+        className="-my-3 w-[80px] self-end"
+        alt=""
+      />
+      <div className="font-sans">
         <h4
-          className={`pt-2 font-serif font-bold capitalize ${
+          className={`font-serif text-sm font-bold capitalize ${
             evil ? "text-red-600" : "text-sky-600"
           }`}
         >
           {label}
         </h4>
-        <span
+        <p
           dangerouslySetInnerHTML={{ __html: description }}
-          className="text-black"
-        ></span>
-      </p>
+          className="text-[13px] leading-none text-black"
+        ></p>
+      </div>
     </div>
   );
 };

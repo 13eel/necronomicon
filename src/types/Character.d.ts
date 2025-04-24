@@ -8,6 +8,14 @@ type Edition =
 
 type CharacterType = "townsfolk" | "outsider" | "minion" | "demon";
 
+// type CharacterDescription =
+//   | string
+//   | {
+//       m: string;
+//       f: string;
+//       ə: string;
+//     };
+
 interface Character {
   label: string;
   icon: string;

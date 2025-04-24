@@ -4,82 +4,83 @@ export const townsfolk = characters({
   type: "townsfolk",
   characters: {
     chef: {
-      label: "cuoco",
+      label: "Chef",
       icon: "tb/chef",
-      description:
-        "Inizi sapendo quante coppie di giocatori malvagi siedono vicini",
+      description: "Inizi sapendo quante coppie di giocatori malvagi ci sono.",
     },
     empath: {
-      label: "empatico",
+      label: "Empatico",
       icon: "tb/empath",
-      description: "Ogni notte, sai quanti dei tuoi 2 vicini vivi sono malvagi",
+      description:
+        "Ogni notte, sai quanti dei tuoi 2 vicini vivi sono malvagi.",
     },
     fortune_teller: {
-      label: "indovino",
+      label: "Indovino",
       icon: "tb/fortuneteller",
       description:
-        "Ogni notte, scegli 2 giocatori: scopri se uno di loro è il Demone. C'è un giocatore buono che ti risulterà come il Demone",
+        "Ogni notte, scegli 2 giocatori:<br>scopri se uno di loro è il Demone.<br>C'è un giocatore buono che ti risulterà come il Demone.",
     },
     investigator: {
-      label: "investigatrice",
+      label: "Investigatrice",
       icon: "tb/investigator",
       description:
-        "Inizi sapendo che 1 di 2 giocatrici indicate è una precisa seguace",
+        "Inizi sapendo che 1 dei 2 giocatori è un particolare Seguace",
     },
     librarian: {
       label: "bibliotecario",
       icon: "tb/librarian",
       size: 100,
       description:
-        "Inizi sapendo che 1 di 2 giocatori indicati è un preciso emarginato (o che non ce ne sono in gioco)",
+        "Inizi sapendo che 1 dei 2 giocatori è un particolare Emarginato<br>(o che non ce ne sono in gioco).",
     },
     monk: {
-      label: "monaca",
+      label: "Monaca",
       icon: "tb/monk",
       description:
-        "Ogni notte*, scegli una giocatrice (te stessa esclusa): sarà protetta dal Demone stanotte",
+        "Ogni notte*, scegli una giocatore<br>(non te stesso): sarà protetto dal Demone stanotte.",
     },
     mayor: {
-      label: "sindaca",
+      label: "Sindaca",
       icon: "tb/mayor",
       description:
-        "Se non ci sono esecuzioni con 3 giocatrici in vita, la tua squadra vince.<br>Una giocatrice potrebbe morire al tuo posto durante la notte",
+        "Se non ci sono esecuzioni con 3 giocatori in vita, la tua squadra vince.<br>Una giocatore potrebbe morire al tuo posto durante la notte.",
     },
     raven_keeper: {
-      label: "custode dei corvi",
+      label: "Custode dei corvi",
       icon: "tb/ravenkeeper",
       size: 95,
       description:
-        "Se muori di notte, scegli un giocatore: scopri il suo ruolo",
+        "Se muori di notte, scegli un giocatore:<br>scopri il suo personaggio.",
     },
     slayer: {
-      label: "caccia demoni",
+      label: "Ammazzademoni",
       icon: "tb/slayer",
+      size: 95,
       description:
-        "Una volta per gioco, di giorno, scegli pubblicamente una giocatrice: se è un Demone muore",
+        "Una volta per partita, durante il giorno, scegli pubblicamente una giocatrice: se è il Demone, muore.",
     },
     soldier: {
-      label: "soldato",
+      label: "Soldato",
       icon: "tb/soldier",
-      description: "Sei al sicuro dal Demone",
+      description: "Sei al sicuro dal Demone.",
     },
     undertaker: {
-      label: "becchina",
+      label: "Becchina",
       icon: "tb/undertaker",
       description:
-        "Ogni notte*, scopri il ruolo di chi è stato giustiziato oggi",
+        "Ogni notte*, scopri quale personaggio è stato giustiziato oggi.",
     },
     virgin: {
-      label: "vergine",
+      label: "Vergine",
       icon: "tb/virgin",
       description:
-        "La 1° volta che vieni nominato, se chi ti ha nominato è un cittadino, verrà giustiziato",
+        "La 1ª volta che vieni nominato, se chi ti ha nominato è un Cittadino, viene giustiziato immediatamente.",
     },
     washerwoman: {
-      label: "lavandaia",
+      label: "Lavandaia",
       icon: "tb/washerwoman",
       description:
-        "Inizi sapendo che 1 di 2 giocatrici è una precisa cittadina",
+        "Inizi sapendo che 1 dei 2 giocatori è una particolare Cittadino.",
     },
   },
 });

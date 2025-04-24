@@ -4,27 +4,27 @@ export const outsiders = characters({
   type: "outsider",
   characters: {
     butler: {
-      label: "maggiordomo",
+      label: "Maggiordomo",
       icon: "tb/butler",
       description:
-        "Ogni notte, scegli un giocatore (te stesso escluso): domani potrai votare solo se egli voterà",
+        "Ogni notte, scegli un giocatore (non se stessi): domani potrai votare solo se anche loro stanno votando.",
     },
     drunk: {
-      label: "ubriacona",
+      label: "Ubriacona",
       icon: "tb/drunk",
       description:
-        "Non sai di essere l'ubriacona. Pensi di essere una cittadina ma la tua abilità malfunziona",
+        "Non sai di essere l'Ubriacona. Credi di essere un personaggio Cittadino, ma non lo sei.",
     },
     recluse: {
-      label: "recluso",
+      label: "Recluso",
       icon: "tb/recluse",
       description:
-        "Potresti risultare come malvagio e come Demone o seguace, anche se morto",
+        "Potresti risultare come malvagio e come Demone o Seguace, anche se morto.",
     },
     saint: {
-      label: "santa",
+      label: "Santa",
       icon: "tb/saint",
-      description: "Se vieni giustiziata, la tua squadra perde",
+      description: "Se muori per esecuzione, la tua squadra perde.",
     },
   },
 });

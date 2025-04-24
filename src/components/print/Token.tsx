@@ -22,7 +22,7 @@ const Token = ({ label, icon, size = 110 }: TokenProps) => {
           x="66.6%"
           textAnchor="middle"
           fontSize={`${size}%`}
-          className="fill-black stroke-white stroke-2 font-token tracking-widest"
+          className="fill-black stroke-slate-200 stroke-2 font-token tracking-widest"
           style={{ paintOrder: "stroke" }}
         >
           <textPath xlinkHref="#curve" textAnchor="middle">

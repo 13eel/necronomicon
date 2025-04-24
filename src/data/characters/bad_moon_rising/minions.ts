@@ -7,7 +7,7 @@ export const minions = characters({
       label: "padrino",
       icon: "bmr/godfather",
       description:
-        "Inizi sapendo quali Emarginati sono in gioco. Se 1 di loro muore oggi, stanotte, scegli una persona: muore.<br>[-1 o +1 Emarginati]",
+        "Iniziate sapendo quali Emarginati sono in gioco. Se 1 di loro muore oggi, stanotte, scegli una persona: muore.<br>[-1 o +1 Emarginati]",
     },
     devils_advocate: {
       label: "avvocato del diavolo",

@@ -4,14 +4,15 @@
 
 .script {
   display: grid;
-  grid-template-columns: 17mm 1fr;
+  grid-template-columns: 17mm 1fr 15mm;
   grid-template-rows: repeat(4, min-content) auto;
   grid-template-areas:
     ". logo"
     "town-side town"
     "out-side out"
     "minions-side minions"
-    "demons-side demons";
+    "demons-side demons"
+    "demons-side footer";
 }
 
 .logo {
@@ -20,6 +21,13 @@
 .side {
   writing-mode: vertical-lr;
   rotate: 180deg;
+}
+.town,
+.out,
+.minions,
+.demons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .town-side {
   grid-area: town-side;
@@ -45,6 +53,9 @@
 .demons {
   grid-area: demons;
 }
+.footer {
+  grid-area: footer;
+}
 
 @page {
   size: A4;
@@ -59,4 +70,3 @@
     height: 287mm;
   }
 }
-

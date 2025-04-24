@@ -13,7 +13,7 @@ export const townsfolk = characters({
       label: "orologiaio",
       icon: "snv/clockmaker",
       description:
-        "Inizi sapendo a quanti passi dal Demone si trova il suo Seguace più vicino.",
+        "Iniziate sapendo a quanti passi dal Demone si trova il suo Seguace più vicino.",
     },
     dreamer: {
       label: "sognatrice",
